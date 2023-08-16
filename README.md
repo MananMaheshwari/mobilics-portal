@@ -1,26 +1,16 @@
-## Getting Started
-First, install the dependencies by running the command: 
-```npm install```
+# NextJS-App
+A dynamic user profile page with two main sections. MyProfile and MyConnections.
 
-Then run the development server:
+Live url: https://mobilics-portal.vercel.app/login
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Go to https://mobilics-portal.vercel.app/signup if you are a new user. Once you will be registered, you will be redirected to the login page.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-You will land on [http://localhost: 300/login](http://localhost:3000/login).
+Login to access your profile.
 
-Signup if you are new else log in with your credentials.
+Initially, majority fields will be empty but you can update your details by clicking on the Edit button to add or update the details.
 
-You will be redirected to your profile page where you can edit your profile.
+From the sidebar, you can navigate to the MyConnections page where you will be shown your connections as well as list of people you can connect to.
 
-You can also navigate to MyConnections page by accessing it from the sidebar.
+On the top right corner, if you press the image, you will get the logout button which will log you out of the portal.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Once logged-out, you wont be able to access your details without logging-in first.
