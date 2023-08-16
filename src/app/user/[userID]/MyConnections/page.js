@@ -1,6 +1,5 @@
 "use client"
 
-import mongoose from "mongoose";
 import { useEffect, useState } from "react"
 
 const Page = ({ params }) => {
@@ -53,7 +52,7 @@ const Page = ({ params }) => {
     if (connectedUsers && users) {
       const nonConnectedUsers = users.filter(user => !(userID == user._id) && !connectedUsers.some(connectedUser => connectedUser._id == user._id));
       setNonConnectedUsers(nonConnectedUsers);
-      const currentUser = users.filter(user => (new mongoose.Types.ObjectId(userID).equals(user._id)));
+      const currentUser = users.filter(user => userID==user._id);
       setCurrUser(currentUser[0]);
       console.log("curr user from filter: ", currentUser[0]);
     }

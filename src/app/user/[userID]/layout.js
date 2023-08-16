@@ -7,7 +7,6 @@ export const metadata = {
 }
 
 export default function UserLayout({ params, children }) {
-  console.log("user layout")
   return (
     <div className="flex">
       <Sidebar params={params} />

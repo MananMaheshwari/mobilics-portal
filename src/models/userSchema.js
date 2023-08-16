@@ -1,7 +1,8 @@
 import mongoose from 'mongoose'
+const Schema = mongoose.Schema;
 const jwt = require('jsonwebtoken');
 
-const userSchema = mongoose.Schema({
+const userSchema = new Schema({
     photo: {
         type: String
     },
@@ -94,17 +95,6 @@ const userSchema = mongoose.Schema({
     ]
 })
 
-userSchema.methods.generateAuthToken = async function () {
-    console.log("generate auth token is called");
-    try {
-        console.log("generate auth token is called");
-        let newToken = jwt.sign({ _id: this._id, name: this.name, email: this.email }, process.env.SECRET_KEY);
-        console.log("jwt: ", newToken);
-        return newToken;
-    } catch (err) {
-        console.log(err);
-    }
-}
 
 const User = mongoose.models.User || mongoose.model('User', userSchema);
 export default User;
