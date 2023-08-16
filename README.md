@@ -1,6 +1,6 @@
 ## Getting Started
 First, install the dependencies by running the command: 
-npm install
+```npm install```
 
 Then run the development server:
 
