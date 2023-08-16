@@ -66,17 +66,6 @@ const Page = () => {
         </div>
 
         <div className="mt-5 sm:mx-auto sm:w-full sm:max-w-sm">
-          <div className="text-center">
-            {
-              message && message.map((m,idx) => {
-                return (
-                  <div key={idx} className={`${msgStatus === "false" ? 'text-red-600' : 'text-green-600'} px-5 py-2`}>
-                    {m}
-                  </div>
-                )
-              })
-            }
-          </div>
           <form className="space-y-6" action="#" method="POST">
             <div>
               <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
